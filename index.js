@@ -71,7 +71,6 @@ function promptUser() {
                 engineer.email = answers.email
                 engineer.github = answers.github
                 objects.push(engineer);
-                console.log(objects);
                 promptUser();
             });
 
@@ -128,7 +127,6 @@ function promptUser() {
                 intern.email = answers.email
                 intern.school = answers.school
                 objects.push(intern);
-                console.log(objects);
                 promptUser();
             });
         } else {

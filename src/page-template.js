@@ -51,7 +51,7 @@ const generatePage = (objects) => {
                 </div>
                 <div class="boxsection">
                     <h5 class="id">ID: ${obj.id}</h5>
-                    <h5 class="email">E-mail: ${obj.email}</h5>
+                    <h5 class="email">E-mail: <a href="mailto:${obj.email}">${obj.email}</a></h5>
                     <h5 class="office">Github username: ${obj.github}</h5>
                 </div>
             </div>`
@@ -64,7 +64,7 @@ const generatePage = (objects) => {
                 </div>
                 <div class="boxsection">
                     <h5 class="id">ID: ${obj.id}</h5>
-                    <h5 class="email">E-mail: ${obj.email}</h5>
+                    <h5 class="email">E-mail: <a href="mailto:${obj.email}">${obj.email}</a></h5>
                     <h5 class="office">School: ${obj.school}</h5>
                 </div>
             </div>`
