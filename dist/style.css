@@ -1,5 +1,5 @@
 :root {
-    --primary: #9dbdc6;
+    --primary: #4a35a8;
     --secondary: #daeaef;
     --tertiary: #ff3d2e;
     --light: #ffffff;
@@ -124,24 +124,49 @@
   }
 
   .boxes {
-      display: grid;
-      grid-gap: 50px;
-      grid-gap: 50px;
-      padding: 10px;
-      grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 200px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0 100px 0 100px;
   }
 
   .box {
-      display: flex;
-      background-color: lightblue;
+      background-color: rgb(112, 166, 236);
       border: 1px solid black;
-      padding: 20px;
+      border-radius: 5px;
       font-size: 30px;
-      text-align: center;
+      height: 225px;
+      width: 250px;
+      margin: 30px;
   }
 
+  .boxhead {
+    border-radius: 5px 5px 0 0;
+    position: top;
+    width: 100%;
+    height: 35%;
+    background-color: var(--primary);
+  }
 
+  .name {
+    margin: 0 0 0 5px;
+    font-weight: lighter;
+    color: white;
+  }
+  .role {
+    margin: 0 0 1rem 5px;
+    color: white;
+  }
+  .id {
+    margin: 0.5rem 0 1rem 5px;
+  }
+  .email {
+    margin: 0 0 1rem 5px;
+  }
+  .office {
+    margin: 0 0 1rem 5px;
+  }
+  
   /* CARDS */
   .card {
     margin: 0 0 20px 0;
